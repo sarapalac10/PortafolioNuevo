@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Palacio Zapata - Portafolio En Construcción</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f7d5ed;
+            color: #272621;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .cat-image {
+            width: 200px;
+            height: auto;
+            margin-top: 1rem;
+        }
+        .loading-bar {
+            width: 60%;
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .loading-bar div {
+            width: 50%;
+            height: 100%;
+            background-color: #fb47ce;
+            animation: loading 2s infinite;
+        }
+        @keyframes loading {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+        .social-links {
+            margin-top: 1.5rem;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #272621;
+            font-weight: bold;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 1rem;
+            font-size: 0.9rem;
+            background-color: rgba(247, 213, 237, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sara Palacio - Portafolio en Construcción</h1>
+    <p>¡Pronto podrás ver mi trabajo!</p>
+    
+    <img src="./img/black-cat-girl-pc.jpg" alt="Gato en construcción" class="cat-image">
+    
+    <div class="loading-bar">
+        <div></div>
+    </div>
+
+    <div class="social-links">
+        <a href="https://github.com/sarapalac10" target="_blank">Ir a GitHub</a>
+        <a href="https://www.linkedin.com/in/sara-palacio-01/" target="_blank">Ir a LinkedIn</a>
+    </div>
+
+    <footer>
+        Hecho por Sara con ❤️ - <span id="year"></span>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
